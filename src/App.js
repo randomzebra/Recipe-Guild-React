@@ -9,10 +9,10 @@ function App() {
 
   // TODO: Add the ability for the <RecipeList /> component to list and delete an existing recipe.
   // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
-  handleDelete = (name) => {
+  const handleDelete = (name) => {
     setRecipes(recipes.filter((recipe) => recipe.name !== name));
   }
-  handleCreate = (event, recipe) => {
+  const handleCreate = (event, recipe) => {
     event.preventDefault()
     console.log(recipe)
     setRecipes([...recipes, recipe])
